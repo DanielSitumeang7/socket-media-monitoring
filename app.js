@@ -10,7 +10,7 @@ const server = http.createServer(app)
 const io = socketIo(
     server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "http://103.116.168.189/",
         methods: ["GET", "POST"]
     }
 }
@@ -19,8 +19,8 @@ const io = socketIo(
 const dbConfig = {
     host: 'localhost',
     user: 'root',
-    password: '',
-    database: 'api_media_monitoring'
+    password: '1crqDVhbS6dv501MUDVUsE5pNV2MLEotbk61Nw7ljZSDR8CCyT',
+    database: 'db_media_monitoring'
 }
 
 const db = mysql.createConnection(dbConfig)
